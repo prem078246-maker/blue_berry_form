@@ -65,10 +65,26 @@ ul li a:hover{
     color: white;
     text-align: center;
     padding: 40px;
+    h2{
+        padding-right: 10px;
+        padding-bottom: 20px;
+    }
+    .back{
+        text-align: left;
+        margin-top: 20px;
+    
+        a{
+            padding-right: 5px;
+        }
+    }
+   
+    
+    
+
 }
 .category-card {
-    text-align: center;
     display: inline-block;
+    text-align: center;
     padding: 45px;
 }
 
@@ -80,11 +96,6 @@ ul li a:hover{
     border: 2px solid #d8a27a;
     padding: 8px;
     
-}
-#home{
-    
-    justify-content: center;
-    text-align: center;
 }
 /* Container holds the slider area */
 .slider-container {
@@ -122,12 +133,38 @@ ul li a:hover{
 .slider-container img:nth-child(3) {
   animation-delay: 8s; /* Starts after 8 seconds */
 }
-
-/* Animation timeline for fading in and out */
 @keyframes slideShow {
   0% { opacity: 0; }
   8% { opacity: 1; }    /* Fades in quickly */
   33% { opacity: 1; }   /* Stays fully visible */
   41% { opacity: 0; }   /* Fades out smoothly */
   100% { opacity: 0; }  /* Stays hidden until the next loop */
+}
+.prem{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+
+}
+.category-image{
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    padding: 8px;
+    flex: 1;
+    min-width: 280px;              
+    max-width: 400px;               
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    background-color: #ffffff;
+    display: flex;
+    padding-right: auto;
+    
+
 }
